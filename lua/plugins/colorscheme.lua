@@ -6,9 +6,6 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      setup = {
-        transparent_background = true,
-      },
       colorscheme = "catppuccin-frappe",
       -- colorscheme = "tokyonight-storm",
     },
