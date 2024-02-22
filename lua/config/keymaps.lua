@@ -5,5 +5,5 @@
 local map = vim.keymap
 
 map.del("n", "<leader>l")
-map.set("n", "<leader>ll", "yarn lint %")
-map.set("n", "<leader>lf", "yarn lint --fix %")
+map.set("n", "<leader>ll", "yarn lint %<CR>")
+map.set("n", "<leader>lf", "yarn lint --fix %<CR>")
