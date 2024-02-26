@@ -214,7 +214,8 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-
+vim.keymap.set('n', '<leader>km', require('telescope.builtin').keymaps, { desc = "List keymap" })
+vim.keymap.set('n', '<leader>fb', ':Format<CR>', { desc = "Format current buffer with LSP" })
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
@@ -238,7 +239,7 @@ vim.defer_fn(function()
       enable = true,
       keymaps = {
         init_selection = '<C-j>',
-        node_incremental =  '<C-j>',
+        node_incremental = '<C-j>',
         scope_incremental = '<c-s-c>',
         node_decremental = '<C-k>',
       },
@@ -286,7 +287,7 @@ vim.defer_fn(function()
           ['<leader>a'] = '@parameter.inner',
         },
       },
-   },
+    },
   }
 end, 0)
 
@@ -374,7 +375,7 @@ local servers = {
   -- pyright = {},
   -- rust_analyzer = {},
   tsserver = {},
-  html = { filetypes = { 'html', 'twig', 'hbs'} },
+  html = { filetypes = { 'html', 'twig', 'hbs' } },
   volar = {},
   tailwindcss = {},
 
