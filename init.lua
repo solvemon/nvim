@@ -216,6 +216,8 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 vim.keymap.set('n', '<leader>km', require('telescope.builtin').keymaps, { desc = "List keymap" })
 vim.keymap.set('n', '<leader>fb', ':Format<CR>', { desc = "Format current buffer with LSP" })
+vim.keymap.set('n', '<leader>lf', ':EslintFixAll<CR>', { desc = "Fix all autofixable Lint issues"})
+vim.keymap.set('n', '<leader>fr', require('telescope.builtin').oldfiles, { desc = "Find recent files"})
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
