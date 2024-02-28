@@ -8,6 +8,9 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
+  -- keys = {
+  --   {'<leader>e', '<CMD>Neotree toggle left<CR>', desc = "NeoTree left"},
+  -- },
   deactivate = function()
     vim.cmd([[Neotree close]])
   end,
@@ -21,7 +24,7 @@ return {
   end,
   config = function ()
     require('neo-tree').setup {
-      vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle left<CR>')
     }
+    vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle left<CR>')
   end
 }

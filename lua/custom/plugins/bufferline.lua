@@ -6,12 +6,12 @@ return {
   },
   opts = {
     options = {
-        offsets = {
-          filetype = "neo-tree",
-         text = "Neo-tree",
-          highlight = "Directory",
-          text_align = "left"
-        },
+      offsets = {
+        filetype = "neo-tree",
+        text = "Neo-tree",
+        highlight = "Directory",
+        text_align = "left"
+      },
       separator_style = "padded_slant"
     }
   },
